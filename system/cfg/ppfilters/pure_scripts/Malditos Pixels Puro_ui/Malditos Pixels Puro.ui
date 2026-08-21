@@ -1,0 +1,100 @@
+-- MALDITOS PIXELS — UI Definition
+PURE_PP_UI_setStartTab("Info")
+
+-- Tab colors (matching addPage names in Lua)
+PURE_PP_UI_setPageColor("Info", rgb(0.08, 0.08, 0.08))
+PURE_PP_UI_setPageColor("Sobre", rgb(0.8, 0.1, 0.1))
+PURE_PP_UI_setPageColor("Exposicao", rgb(1, 0.5, 0))
+PURE_PP_UI_setPageColor("Tonemap", rgb(0.9, 0.4, 0.1))
+PURE_PP_UI_setPageColor("Cor", rgb(1, 0.35, 0.4))
+PURE_PP_UI_setPageColor("Bloom", rgb(0.9, 0.7, 0.3))
+PURE_PP_UI_setPageColor("World", rgb(0.3, 0.6, 0.4))
+PURE_PP_UI_setPageColor("GodRays", rgb(1, 0.8, 0.2))
+PURE_PP_UI_setPageColor("Emissives", rgb(0.7, 0.5, 0.2))
+PURE_PP_UI_setPageColor("Efeitos", rgb(0.5, 0.8, 1.0))
+PURE_PP_UI_setPageColor("Reflexos", rgb(0.4, 0.6, 0.9))
+PURE_PP_UI_setPageColor("Noturno", rgb(0.3, 0.2, 0.8))
+PURE_PP_UI_setPageColor("Ceu", rgb(0.2, 0.3, 0.7))
+PURE_PP_UI_setPageColor("Atmosfera", rgb(0.4, 0.5, 0.6))
+PURE_PP_UI_setPageColor("Guia", rgb(0.6, 0.6, 0.6))
+PURE_PP_UI_setPageColor("Luz", rgb(1, 0.9, 0.5))
+PURE_PP_UI_setPageColor("Chuva", rgb(0.35, 0.55, 0.75))
+PURE_PP_UI_setPageColor("Avancado", rgb(0.4, 0.4, 0.4))
+
+-- ================================================================
+-- INFO: Logo
+-- ================================================================
+PURE_PP_UI_drawImage("Info", "mpixels_logo.png",
+    {
+        rgbm = rgbm(1, 1, 1, 1),
+        x = 0,
+        y = 0,
+        width = -1,
+        height = -1,
+        fit_mode = ui.ImageFit.Fit,
+        horizontal_alignment = ui.Alignment.Center,
+        vertical_alignment = ui.Alignment.Center,
+    })
+
+-- ================================================================
+-- SOBRE: Manifesto
+-- ================================================================
+PURE_PP_UI_drawText("Sobre", "MALDITOS RACHADORES",
+    {
+        rgbm = rgbm(0.9, 0.1, 0.1, 1),
+        x = 0, y = 8,
+        width = -1,
+        font = ui.Font.Title,
+        horizontal_alignment = ui.Alignment.Center,
+        vertical_alignment = ui.Alignment.Start,
+    })
+
+PURE_PP_UI_drawText("Sobre", "MALDITOS PIXELS",
+    {
+        rgbm = rgbm(1, 1, 1, 1),
+        x = 0, y = 36,
+        width = -1,
+        font = ui.Font.Main,
+        horizontal_alignment = ui.Alignment.Center,
+        vertical_alignment = ui.Alignment.Start,
+    })
+
+PURE_PP_UI_drawText("Sobre", "The cinematic side of illegal street racing.\nO lado cinematografico das corridas ilegais de rua.",
+    {
+        rgbm = rgbm(0.75, 0.75, 0.75, 0.95),
+        x = 0, y = 60,
+        width = -1,
+        font = ui.Font.Italic,
+        horizontal_alignment = ui.Alignment.Center,
+        vertical_alignment = ui.Alignment.Start,
+    })
+
+PURE_PP_UI_drawText("Sobre", "Comecou como meme.\nUm Discord na zueira.\nVirou encontro de racha.\nUma equipe. Uma obsessao.\n\nNossos carros. Nossos mods. Nosso filtro.\nSimulacao maxima na pista.\nRealismo maximo na tela.\n\nMalditos Pixels nao e um filtro comum.\nE um filtro construido por rachadores.\nCenas que refletem o real.\nA madrugada do jeito que ela e.\n\nSe voce esta aqui, ja e um de nos.\nSeja bem-vindo a equipe.",
+    {
+        rgbm = rgbm(0.65, 0.65, 0.65, 0.9),
+        x = 0, y = 95,
+        width = -1,
+        font = ui.Font.Main,
+        horizontal_alignment = ui.Alignment.Center,
+        vertical_alignment = ui.Alignment.Start,
+    })
+
+PURE_PP_UI_drawText("Sobre", "JMesquitaa | 60.000 Miles | Paulinho | Sauce | PhB | Malditos Rachadores",
+    {
+        rgbm = rgbm(0.55, 0.55, 0.55, 0.75),
+        x = 0, y = 320,
+        width = -1,
+        font = ui.Font.Small,
+        horizontal_alignment = ui.Alignment.Center,
+        vertical_alignment = ui.Alignment.Start,
+    })
+
+PURE_PP_UI_drawText("Sobre", "(c) 2026 Malditos Rachadores - Todos os direitos reservados.",
+    {
+        rgbm = rgbm(0.35, 0.35, 0.35, 0.5),
+        x = 0, y = 338,
+        width = -1,
+        font = ui.Font.Tiny,
+        horizontal_alignment = ui.Alignment.Center,
+        vertical_alignment = ui.Alignment.Start,
+    })
